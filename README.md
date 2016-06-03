@@ -72,7 +72,7 @@ PhpStorm Live Templates for Twig are a **Twig - Extended** Live Template group w
 
 ## Installation
 
-Copy the XML files provided in this repository to the location where PhpStorm stores Live Templates on your operating system. The PhpStorm docs provide [instructions on installing Live Templates](https://www.jetbrains.com/help/phpstorm/10.0/live-templates.html) on OSX, Windows, and Linux.
+Copy the `Twig - Extended.xml` file to the location where PhpStorm stores Live Templates on your operating system. The PhpStorm docs provide [instructions on installing Live Templates](https://www.jetbrains.com/help/phpstorm/10.0/live-templates.html) on OSX, Windows, and Linux.
 
 Visit `Preferences->Editor->Live Templates` and ensure that the **Twig - Extended** Live Templates are enabled.
 
