@@ -69,7 +69,7 @@ The following keywords expand to their respective code constructs when used as t
     endspaceless      {% endspaceless %}
     endverbatim       {% endverbatim %}
 
-_While there is not really enough keywords to make some of these conventions very meaningful, if curious: Keywords that end in the letter `b` output a block version of the tag. Keywords that end in the letter `p` output a version of the tag with parameters._
+_While there are not really enough keywords to make some of these conventions very meaningful, if curious: Keywords that end in the letter `b` output a block version of the tag. Keywords that end in the letter `p` output a version of the tag with parameters._
 
 ### Debugging
 
