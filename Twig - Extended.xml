@@ -1,0 +1,261 @@
+<!-- Twig Extended v1.0.0 -->
+<templateSet group="Twig - Extended">
+  <template name="verbatim" value="{% verbatim %}&#10;&#9;$END$&#10;{% endverbatim %}" description="{% verbatim %}...{% endverbatim %}" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="setb" value="{% set $NAME$ %}&#10;    $END$&#10;{% endset %}" description="{% set name %}...{% endset %}" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="name" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="set" value="{% set $NAME$ = $VALUE$ %}" description="{% set name = value %}" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="&quot;value&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="import" value="{% import '$TEMPLATE$' as $NAME$ %}" description="{% import 'template' %}" toReformat="false" toShortenFQNames="true">
+    <variable name="TEMPLATE" expression="" defaultValue="&quot;template&quot;" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="importself" value="{% import _self as $NAME$ %}" description="{% import _self as name %}" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="ot" value="{{ $END$$SELECTION$ }}" description="Output Tag: {{ SELECTION }}" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="inckv" value="{% include '$TEMPLATE$' with {&#10;&#9;$KEY$: $VALUE$$END$&#10;} %}" description="{% include 'template' with { key : value } %}" toReformat="false" toShortenFQNames="true">
+    <variable name="TEMPLATE" expression="" defaultValue="&quot;template&quot;" alwaysStopAt="true" />
+    <variable name="KEY" expression="" defaultValue="&quot;key&quot;" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="&quot;value&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="incp" value="{% include '$TEMPLATE$' with $VARS$ %}" description="{% include 'template' with params %}" toReformat="false" toShortenFQNames="true">
+    <variable name="TEMPLATE" expression="" defaultValue="&quot;template&quot;" alwaysStopAt="true" />
+    <variable name="VARS" expression="" defaultValue="&quot;params&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="if" value="{% if $CONDITION$ %}$STUFF${% endif %}" description="{% if condition %}...{% endif %} - inline" toReformat="false" toShortenFQNames="true">
+    <variable name="CONDITION" expression="" defaultValue="&quot;condition&quot;" alwaysStopAt="true" />
+    <variable name="STUFF" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="ifb" value="{% if $CONDITION$ %}&#10;&#9;$STUFF$&#10;{% endif %}" description="{% if condition %}...{% endif %}" toReformat="false" toShortenFQNames="true">
+    <variable name="CONDITION" expression="" defaultValue="&quot;condition&quot;" alwaysStopAt="true" />
+    <variable name="STUFF" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="ife" value="{% if $CONDITION$ %}&#10;&#9;$STUFF$&#10;{% else %}&#10;&#9;$MORESTUFF$&#10;{% endif %}" description="{% if condition %}...{% else %}...{% endif %}" toReformat="false" toShortenFQNames="true">
+    <variable name="CONDITION" expression="" defaultValue="&quot;condition&quot;" alwaysStopAt="true" />
+    <variable name="STUFF" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MORESTUFF" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="inc" value="{% include '$TEMPLATE$' %}" description="{% include 'template' %}" toReformat="false" toShortenFQNames="true">
+    <variable name="TEMPLATE" expression="" defaultValue="&quot;template&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="filterb" value="{% filter $NAME$ %}&#10;    $END$&#10;{% endfilter %}" description="{% filter name %}...{% endfilter %}" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="&quot;filter&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="at" value="{% $END$$SELECTION$ %}" description="Action Tag {% SELECTION %}" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="autoescape" value="{% autoescape &quot;$TYPE$&quot; %}&#10;&#9;$END$&#10;{% endautoescape %}" description="{% autoescape 'type' %}...{% endautoescape %}" toReformat="false" toShortenFQNames="true">
+    <variable name="TYPE" expression="" defaultValue="&quot;html|js|css|url|html_attr&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="b" value="{% $TAG$ $NAME$ %}&#10;&#9;$SELECTION$$END$&#10;{% end$TAG$ %}" description="Surround with Twig tag block" toReformat="true" toShortenFQNames="true">
+    <variable name="TAG" expression="" defaultValue="&quot;block&quot;" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="block" value="{% block $NAME$ %}$END${% endblock %}" description="{% block name %}...{% endblock %} - inline" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="blockb" value="{% block $NAME$ %}&#10;    $END$&#10;{% endblock %}" description="{% block name %}...{% endblock %}" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="ct" value="{# $END$$SELECTION$ #}" description="Comment Tag: {# SELECTION #}" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="do" value="{% do $EXPRESSION$ %}" description="{% do expression %}" toReformat="false" toShortenFQNames="true">
+    <variable name="EXPRESSION" expression="" defaultValue="&quot;something&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="else" value="{% else %}" description="{% else %}" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="embed" value="{% embed $TEMPLATE$ %}&#10;&#9;$END$&#10;{% endembed %}" description="{% embed &quot;template&quot; %}...{% endembed %}" toReformat="false" toShortenFQNames="true">
+    <variable name="TEMPLATE" expression="" defaultValue="&quot;template&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="endautoescape" value="{% endautoescape %}" description="{% endautoescape %}" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="endblock" value="{% endblock %}" description="{% endblock %}" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="endembed" value="{% endembed %}" description="{% endembed %}" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="endfilter" value="{% endfilter %}" description="{% endfilter %}" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="endfor" value="{% endfor %}" description="{% endfor %}" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="endif" value="{% endif %}" description="{% endif %}" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="endmacro" value="{% endmacro %}" description="{% endmacro %}" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="endset" value="{% endset %}" description="{% endset %}" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="endspaceless" value="{% endspaceless %}" description="{% endspaceless %}" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="endverbatim" value="{% endverbatim %}" description="{% endverbatim %}" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="extends" value="{% extends &quot;$TEMPLATE$&quot; %}&#10;" description="{% extends &quot;template&quot; %}" toReformat="false" toShortenFQNames="true">
+    <variable name="TEMPLATE" expression="" defaultValue="&quot;template&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="macro" value="{% macro $NAME$($PARAMETERS$) %}&#10;&#9;$END$&#10;{% endmacro %}&#10;" description="{% macro name(params) %}...{% endmacro %}" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <variable name="PARAMETERS" expression="" defaultValue="&quot;params&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="spaceless" value="{% spaceless %}&#10;&#9;$END$&#10;{% endspaceless %}" description="{% spaceless %}...{% endspaceless %}" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="use" value="{% use '$TEMPLATE$' %}" description="{% use 'template' %}" toReformat="false" toShortenFQNames="true">
+    <variable name="TEMPLATE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="include" value="{% include '$TEMPLATE$' %}" description="{% include 'template' %}" toReformat="false" toShortenFQNames="true">
+    <variable name="TEMPLATE" expression="" defaultValue="&quot;template&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="for" value="{% for $VAR$ in $SEQUENCE$ %}&#10;&#9;$STUFF$&#10;{% endfor %}" description="{% for var in sequence %}...{% endfor %}" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="&quot;var&quot;" alwaysStopAt="true" />
+    <variable name="SEQUENCE" expression="" defaultValue="&quot;0..11&quot;" alwaysStopAt="true" />
+    <variable name="STUFF" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="fore" value="{% for $VAR$ in $SEQUENCE$ %}&#10;&#9;$STUFF$&#10;{% else %}&#10;&#9;$MORESTUFF$&#10;{% endfor %}" description="{% for var in sequence %}...{% else %}...{% endfor %}" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="&quot;var&quot;" alwaysStopAt="true" />
+    <variable name="SEQUENCE" expression="" defaultValue="&quot;0..11&quot;" alwaysStopAt="true" />
+    <variable name="STUFF" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MORESTUFF" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="from" value="{% from '$TEMPLATE$' import $MACRO$ %}" description="{% from 'template' import 'macro' %}" toReformat="false" toShortenFQNames="true">
+    <variable name="TEMPLATE" expression="" defaultValue="&quot;template&quot;" alwaysStopAt="true" />
+    <variable name="MACRO" expression="" defaultValue="&quot;macroName&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="filter" value="{% filter $NAME$ %}$END${% endfilter %}" description="{% filter name %}...{% endfilter %} - inline" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="&quot;filter&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="blockf" value="{{ block('$NAME$') }}" description="{{ block('name') }}" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="d" value="&lt;pre&gt;{{ dump($SELECTION$) }}&lt;/pre&gt;" description="&lt;pre&gt;{{ dump() }}&lt;/pre&gt;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+</templateSet>
