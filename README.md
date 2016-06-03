@@ -4,7 +4,7 @@ A more extensive library of PhpStorm Live Templates for Twig.
 
 ## Features
 
-These live templates add support tab-trigger support for all common Twig Tags and Functions; enable support for wrapping selections with multiple Twig tags; and add various other utility snippets that help close tags, debug, and use your preferred tag syntax.
+PhpStorm Live Templates for Twig are a **Twig - Extended** Live Template group which adds tab-trigger support for all common Twig Tags and Functions; enables support for wrapping selections with multiple Twig tags; and adds various other utility snippets that help close tags, debug, and use your preferred tag syntax.
 
 ### Wrap Selection in Tags
 
@@ -15,7 +15,7 @@ These live templates add support tab-trigger support for all common Twig Tags an
     option+command+j  {{ dump() }}
     option+command+j  <pre>{{ dump(...) }}</pre>
 
-### Wrap Action Tag
+### Wrap Action Tag (via tab trigger)
 
     b                 {% block name %} ... {% endblock %}
 
@@ -74,13 +74,13 @@ These live templates add support tab-trigger support for all common Twig Tags an
 
 Copy the XML files provided in this repository to the location where PhpStorm stores Live Templates on your operating system. The PhpStorm docs provide [instructions on installing Live Templates](https://www.jetbrains.com/help/phpstorm/10.0/live-templates.html) on OSX, Windows, and Linux.
 
-Visit Preferences->Editor->Live Templates and ensure that the 'Twig - Extended' Live Templates are enabled.
+Visit `Preferences->Editor->Live Templates` and ensure that the **Twig - Extended** Live Templates are enabled.
 
 ----
 
 ## Maintenance & Contributions
 
-If you'd like to contribute to the **PhpStorm Live Templates for Twig**, please consider submitting a pull request, reporting an issue, providing examples of how you would like to see the behavior of the Live Templates improved, or just sending your thoughts.
+If you'd like to contribute to the **Twig - Extended** Live Templates, please consider submitting a pull request, reporting an issue, providing examples of how you would like to see the behavior of the Live Templates improved, or just sending your thoughts.
 
 ## References
 
