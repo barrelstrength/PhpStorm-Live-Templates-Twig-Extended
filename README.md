@@ -4,22 +4,28 @@ A more extensive library of PhpStorm Live Templates for Twig.
 
 ## Features
 
-PhpStorm Live Templates for Twig are a **Twig - Extended** Live Template group which adds tab-trigger support for common Twig Tags; enables support for wrapping selections with multiple Twig tags; and adds various other utility snippets that help close tags, debug, and use your preferred tag syntax.
+The **Twig - Extended** Live Templates add tab-trigger support for common Twig Tags; enable support for wrapping selections with multiple Twig tags; and add various other utility snippets that help close tags, debug, and use your preferred tag syntax.
 
 ### Wrap Selection in Tags
+
+PhpStorm's `Code->Surround With...` and `Code->Surround With Live Template...` options allow you to select text that is already in your template and wrap it within tags dynamically. The **Twig-Extended** Live Templates enable the following tags to be wrapped around selections:
 
     option+command+j  {{ ... }}
     option+command+j  {% ... %}
     option+command+j  {# ... #}
     option+command+j  {% block name %} ... {% endblock %}
-    option+command+j  {{ dump() }}
+    option+command+j  {{ dump(...) }}
     option+command+j  <pre>{{ dump(...) }}</pre>
 
 ### Wrap Action Tag (via tab trigger)
 
+The `b` tab trigger provides a flexible way to create a generic Twig action tag. By default, `b` tab trigger expands to a `block` tag, however you can immediately overwrite the `block` keyword with any keyword of your choice.
+
     b                 {% block name %} ... {% endblock %}
 
 ### Twig Tags (via tab trigger)
+
+The following keywords expand to their respective code constructs when used as tab-triggers.
 
     at                {{  }}
     ot                {%  %}
@@ -62,6 +68,8 @@ PhpStorm Live Templates for Twig are a **Twig - Extended** Live Template group w
     endmacro          {% endmacro %}
     endspaceless      {% endspaceless %}
     endverbatim       {% endverbatim %}
+
+_While there is not really enough keywords to make some of these conventions very meaningful, if curious: Keywords that end in the letter `b` output a block version of the tag. Keywords that end in the letter `p` output a version of the tag with parameters._
 
 ### Debugging
 
