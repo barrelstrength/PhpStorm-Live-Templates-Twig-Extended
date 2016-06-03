@@ -4,7 +4,7 @@ A more extensive library of PhpStorm Live Templates for Twig.
 
 ## Features
 
-PhpStorm Live Templates for Twig are a **Twig - Extended** Live Template group which adds tab-trigger support for all common Twig Tags and Functions; enables support for wrapping selections with multiple Twig tags; and adds various other utility snippets that help close tags, debug, and use your preferred tag syntax.
+PhpStorm Live Templates for Twig are a **Twig - Extended** Live Template group which adds tab-trigger support for common Twig Tags; enables support for wrapping selections with multiple Twig tags; and adds various other utility snippets that help close tags, debug, and use your preferred tag syntax.
 
 ### Wrap Selection in Tags
 
@@ -65,8 +65,8 @@ PhpStorm Live Templates for Twig are a **Twig - Extended** Live Template group w
 
 ### Debugging
 
-    d               <pre>{{ dump() }}</pre>
-    dump            {{ dump() }}
+    d                 <pre>{{ dump() }}</pre>
+    dump              {{ dump() }}
 
 ----
 
