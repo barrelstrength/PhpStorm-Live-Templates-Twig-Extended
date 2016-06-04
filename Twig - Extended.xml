@@ -1,4 +1,4 @@
-<!-- Twig Extended v1.0.0 -->
+<!-- Twig - Extended Live Templates v1.0.0 -->
 <templateSet group="Twig - Extended">
   <template name="verbatim" value="{% verbatim %}&#10;&#9;$END$&#10;{% endverbatim %}" description="{% verbatim %}...{% endverbatim %}" toReformat="false" toShortenFQNames="true">
     <context>
