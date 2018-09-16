@@ -80,7 +80,7 @@ _While there are not really enough keywords to make some of these conventions ve
 
 ## Installation
 
-Copy the `Twig - Extended.xml` file to the location where PhpStorm stores Live Templates on your operating system. The PhpStorm docs provide [instructions on installing Live Templates](https://www.jetbrains.com/help/phpstorm/10.0/live-templates.html) on OSX, Windows, and Linux.
+Copy the `Twig - Extended.xml` file to the location where PhpStorm stores Live Templates on your operating system. The PhpStorm docs provide [instructions on sharing Live Templates](https://www.jetbrains.com/help/phpstorm/sharing-live-templates.html) on OSX, Windows, and Linux.
 
 Visit `Preferences->Editor->Live Templates` and ensure that the **Twig - Extended** Live Templates are enabled.
 
