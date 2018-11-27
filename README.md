@@ -6,6 +6,14 @@ A more extensive library of PhpStorm Live Templates for Twig.
 
 The **Twig - Extended** Live Templates add tab-trigger support for common Twig Tags; enable support for wrapping selections with multiple Twig tags; and add various other utility snippets that help close tags, debug, and use your preferred tag syntax.
 
+## Installation
+
+1. Go to *PhpStorm Preferences | Tools | Settings Repository*
+
+2. Add Read-only Source https://github.com/barrelstrength/PhpStorm-Live-Templates-Twig-Extended
+
+3. Restart PhpStorm
+
 ### Wrap Selection in Tags
 
 PhpStorm's `Code->Surround With...` and `Code->Surround With Live Template...` options allow you to select text that is already in your template and wrap it within tags dynamically. The **Twig-Extended** Live Templates enable the following tags to be wrapped around selections:
@@ -77,10 +85,6 @@ _While there are not really enough keywords to make some of these conventions ve
     dump              {{ dump() }}
 
 ----
-
-## Installation
-
-Copy the Live Template group configuration files to the `templates` folder in the location where PhpStorm stores Live Templates on your operating system. Live template group configuration files are stored in the templates directory of the [IDE configuration directory](https://www.jetbrains.com/help/phpstorm/tuning-the-ide.html#config-directory). If a `templates` folder doesn't exist in your configuration directory, go ahead and create it.
 
 ### Live Template group configuration files
 
