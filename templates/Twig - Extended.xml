@@ -1,4 +1,3 @@
-<!-- Twig - Extended Live Templates v1.0.0 -->
 <templateSet group="Twig - Extended">
   <template name="verbatim" value="{% verbatim %}&#10;&#9;$END$&#10;{% endverbatim %}" description="{% verbatim %}...{% endverbatim %}" toReformat="false" toShortenFQNames="true">
     <context>
@@ -111,7 +110,6 @@
   </template>
   <template name="blockb" value="{% block $NAME$ %}&#10;    $END$&#10;{% endblock %}" description="{% block name %}...{% endblock %}" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
-    <context />
   </template>
   <template name="ct" value="{# $END$$SELECTION$ #}" description="Comment Tag: {# SELECTION #}" toReformat="false" toShortenFQNames="true">
     <context>
@@ -253,8 +251,6 @@
   </template>
   <template name="d" value="&lt;pre&gt;{{ dump($SELECTION$) }}&lt;/pre&gt;" description="&lt;pre&gt;{{ dump() }}&lt;/pre&gt;" toReformat="false" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
       <option name="Twig" value="true" />
     </context>
   </template>
