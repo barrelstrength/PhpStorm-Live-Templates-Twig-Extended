@@ -46,7 +46,9 @@ The following keywords expand to their respective code constructs when used as t
     importself        {% import _self as name %}
     inc, include      {% include 'template' %}
     incp              {% include 'template' with params %}
+    incpo             {% include 'template' with params only %}
     inckv             {% include 'template' with { key: value } %}
+    inckvo            {% include 'template' with { key: value } only %}
     use               {% use 'template' %}
 
     autoescape        {% autoescape 'type' %}...{% endautoescape %}
@@ -103,5 +105,4 @@ If you'd like to contribute to the **Twig - Extended** Live Templates, please co
 - [Twig](http://www.twig-project.org/)
 - [PhpStorm](https://www.jetbrains.com/phpstorm/)
 - [PhpStorm Live Templates for Craft CMS](https://github.com/BarrelStrength/PhpStorm-Live-Templates-Craft-CMS) - A library of PhpStorm Live Templates for Craft CMS, including several additional snippets for Craft Twig variables.
-
 

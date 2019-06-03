@@ -43,11 +43,26 @@
       <option name="Twig" value="true" />
     </context>
   </template>
+  <template name="inckvo" value="{% include '$TEMPLATE$' with {&#10;&#9;$KEY$: $VALUE$$END$&#10;} only %}" description="{% include 'template' with { key : value } %}" toReformat="false" toShortenFQNames="true">
+    <variable name="TEMPLATE" expression="" defaultValue="&quot;template&quot;" alwaysStopAt="true" />
+    <variable name="KEY" expression="" defaultValue="&quot;key&quot;" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="&quot;value&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
   <template name="incp" value="{% include '$TEMPLATE$' with $VARS$ %}" description="{% include 'template' with params %}" toReformat="false" toShortenFQNames="true">
     <variable name="TEMPLATE" expression="" defaultValue="&quot;template&quot;" alwaysStopAt="true" />
     <variable name="VARS" expression="" defaultValue="&quot;params&quot;" alwaysStopAt="true" />
     <context>
-      <option name="Twig" value="true" />
+        <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="incpo" value="{% include '$TEMPLATE$' with $VARS$ only %}" description="{% include 'template' with params only %}" toReformat="false" toShortenFQNames="true">
+    <variable name="TEMPLATE" expression="" defaultValue="&quot;template&quot;" alwaysStopAt="true" />
+    <variable name="VARS" expression="" defaultValue="&quot;params&quot;" alwaysStopAt="true" />
+    <context>
+        <option name="Twig" value="true" />
     </context>
   </template>
   <template name="if" value="{% if $CONDITION$ %}$STUFF${% endif %}" description="{% if condition %}...{% endif %} - inline" toReformat="false" toShortenFQNames="true">
