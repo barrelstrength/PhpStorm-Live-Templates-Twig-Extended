@@ -274,4 +274,10 @@
       <option name="Twig" value="true" />
     </context>
   </template>
+  <template name="rp" value="{% requirePermission &quot;$PERMISSION$&quot; %}&#10;" description="{% requirePermission &quot;stayUpLate&quot; %}" toReformat="false" toShortenFQNames="true">
+    <variable name="PERMISSION" expression="" defaultValue="&quot;stayUpLate&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
 </templateSet>
